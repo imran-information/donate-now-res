@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donate Now</title>
+    <!-- daisyUI CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'color': '#111111',
+                        'primary-color': '#B4F461',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <header class="sticky top-0 z-50 backdrop-blur-md">
+        <nav class="bg-white">
+            <div class="navbar w-4/5 mx-auto p-4">
+                <div class="navbar-start">
+                    <button id="blog-btn"
+                        class="text-xl font-semibold bg-primary-color text-color py-2 px-10 rounded-md">Blog</button>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <div class="mr-4">
+                        <img src="assets/logo.png" alt="" srcset="">
+                    </div>
+                    <h2 class="text-color font-semibold text-2xl"> Donate Bangladesh</h2>
+                </div>
+                <div class="navbar-end">
+                    <img src="assets/coin.png" alt="">
+                    <h3 id="main-balance" class="text-color font-medium text-xl ms-2">5000</h3>
+                </div>
+            </div>
+        </nav>
+        <!-- Donation & History BTN   -->
+        <div class="my-8 flex justify-center gap-5">
+            <button id="donation-btn"
+                class="text-xl font-semibold bg-primary-color text-color py-2 px-8 rounded-md ">Donation</button>
+            <button id="history-btn"
+                class="text-xl font-semibold bg-white border-solid border-2 border-primary-color b text-color py-2 px-8 rounded-md">History</button>
+        </div>
+    </header>
 </body>
+
 </html>
