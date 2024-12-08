@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'color': '#111111',
+                        'primary-color': '#B4F461',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-white">
+            <div class="navbar w-4/5 mx-auto p-4">
+                <div class="navbar-start">
+                    <button id="home-btn"
+                        class="text-xl font-semibold bg-primary-color text-color py-2 px-10 rounded-md">Home</button>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <div class="mr-4">
+                        <img src="assets/logo.png" alt="" srcset="">
+                    </div>
+                    <h2 class="text-color font-semibold text-2xl">Donate Bangladesh</h2>
+                </div>
+                <div class="navbar-end">
+                    <img src="assets/coin.png" alt="">
+                    <h3 id="main-balance" class="text-color font-medium text-xl ms-2">5500</h3>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="text-center font-bold text-5xl my-10">The blog page should contain 4 questions and their answers:
+        </h1>
+    </header>
+    <main class="w-4/5 mx-auto my-20">
+        <section class="blogs-cotainer grid sm:grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="blogs">
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content sm:block md:flex  gap-5 ">
+                        <div class="flex-1">
+                            <img width="" src="assets/DOM.png" alt="" srcset="">
+                        </div>
+                        <p class="flex-1">What is the DOM? The Document Object Model (DOM) is a programming interface
+                            for web documents. It represents the page so that programs can change the document
+                            structure, style, and content. The DOM represents the document as nodes and objects; that
+                            way, programming languages can interact with the page.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogs">
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content sm:block md:flex gap-5">
+                        <div class="flex-1">
+                            <img width="" src="assets/dom-tree-example.png" alt="" srcset="">
+                        </div>
+                        <p class="flex-1">The DOM Input select() method selects all the text content of a textarea or an
+                            input element that contains the text field. Syntax: element. select()</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogs">
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,
+                        and why is it useful?</div>
+                    <div class="collapse-content sm:block md:flex gap-5">
+                        <div class="flex-1">
+                            <img width="" src="assets/delegation.png" alt="" srcset="">
+                        </div>
+                        <p class="flex-1">Event delegation refers to the process of using event propagation (bubbling)
+                            to handle events at a higher level in the DOM than the element on which the event
+                            originated. It allows us to attach a single event listener for elements that exist now or in
+                            the future.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs">
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,
+                        and why is it useful?</div>
+                    <div class="collapse-content sm:block md:flex gap-5">
+                        <div class="flex-1">
+                            <img width="100%" src="assets/images.png" alt="" srcset="">
+                        </div>
+                        <p class="flex-1">Manipulating Element Attributes
+                            If you want to change other attributes like id , href , or src , you can use the
+                            setAttribute() method. The setAttribute() method accepts two arguments: The name of the
+                            attribute to set. The value of the attribute to set.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/blogs.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/donate.js"></script>
+</body>
+
+</html>
